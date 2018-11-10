@@ -25,9 +25,33 @@
 
         <div class="container">
                 <div class="card" style="width: 100%;">
-                    <div class="card-body">
+                    <div class="card-body table-responsive-sm">
                         <h5 class="card-title card-header">Current Employees</h5>
-                        <p class="card-text">Submitted employee info will go here.</p>
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Employee Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">Months Worked</th>
+                                    <th scope="col">Monthly Rate</th>
+                                    <th scope="col">Total Billed</th>
+                                  </tr>
+                                </thead>
+                                <tbody id="employee-content">
+                                    <!-- Start Table body, add code from JS below... -->
+                                  <tr>
+                                    <th scope="row" id="row-1" class="colName">Joe Test</th>
+                                    <td class="colRole">Boss</td>
+                                    <td class="colStartDate">11/2/2016</td>
+                                    <td class="colMonths">12</td>
+                                    <td class="colRate">22</td>
+                                    <td class="colBilled">3000</td>
+                                  </tr>
+                                  <!-- End Table Body -->
+                                </tbody>
+                        </table>
+
                         <h4 id="name-display">Name: </h4>
                         <h4 id="role-display">Role: </h4>
                         <h4 id="startDate-display">Start Date: </h4>
